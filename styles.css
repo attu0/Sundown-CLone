@@ -1,0 +1,352 @@
+@font-face {
+    font-family: neu;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    src: url(./NeueHaasDisplayLight.ttf);
+    font-weight: 100;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page1{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(239, 234, 227);
+    position: relative;
+    padding: 2vw 2vw;
+}
+
+nav{
+    padding-right: 3rem;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(239, 234, 227);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: neu;
+}
+
+.nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-part2 h4{
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-weight: 500;
+    color: rgb(16, 16, 16);
+    font-style: 18px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.nav-part2 h4::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+}
+
+.nav-part2 h4:hover::after{
+    bottom: 0;
+    transition: 0.4s;
+    border-radius: 0%;
+}
+
+.nav-part2 h4 a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 9;
+}
+
+.nav-part2:hover a {
+    color: white;
+}
+
+.center{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.page1 video{
+    z-index: 1;
+}
+
+.right h2{
+    font-size: 8vw;
+    line-height: 9vw;
+    text-align: right;
+}
+
+.left h3{
+    width: 30vw;
+    font-size: 2vw;
+    font-family: 'neu';
+}
+
+.hero-shape{
+    position: absolute;
+    right: 0;
+    top: 65vh;
+}
+
+/* .hero-1{
+    width: 100%;
+    height: 100%;
+    filter: blur(30px);
+    background-color: #FE330B;
+    width: 46vw;
+    height: 36vw;
+    border-radius: 50%;
+    position: relative;
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    position: relative;
+    z-index: 9;
+} */
+
+@keyframes anime {
+    from{
+        transform: translate(-10%,10%) skew(0);
+    } to{
+        transform: translate(10%,-10%) skew(-20degree);
+    }
+}
+
+.page1 video{
+    width: 92rem;
+    border-radius: 1rem;
+    margin-top: 4vw;
+    z-index: 2;
+}
+
+
+
+.page2{
+    min-height: 100vh;
+    padding: 2vw 0;
+    width: 100%;
+    background-color: rgb(239, 234, 227);
+}
+
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.moving-text{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.moving-text h1{
+    font-size: 9vw;
+    display: inline-block;
+}
+
+.moving-text::-webkit-scrollbar{
+    display: none;
+}
+
+.dot{
+    width: 70px;
+    height: 70px;
+    background-color: #FE330B;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(-100%);
+    }
+}
+
+.page2-bottom{
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(239, 234, 227);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 4vw; */
+    /* padding: 4.5vw; */
+}
+
+.page2-bottom h1{
+    font-size: 3.5vw;
+    width: 50%;
+    position: relative;
+    z-index: 9;
+}
+
+.img-div-bot img{
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.img-div-bot{
+    width: 20%;
+}
+
+.img-div-bot p{
+    font-weight: 100;
+}
+
+.page2 #ani{
+    height: 30vw;
+    width: 30vw;
+    filter: blur(40px);
+    border-radius: 50%;
+    background-color: #FE330B;
+    position: absolute;
+    top: 320%;
+    left: 25%;
+    /* animation-name: anime;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite; */
+}
+
+.page2 #ani2{
+    height: 30vw;
+    width: 30vw;
+    filter: blur(40px);
+    border-radius: 50%;
+    background-color: #FE330B;
+    position: absolute;
+    top: 320%;
+    left: 25%;
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(239, 234, 227);
+    padding: 4vw 0;
+}
+
+.elem{
+    height: 150px;
+    width:100%;
+    /* background-color: orange; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(39, 39, 39, 0.247);
+    overflow: hidden;
+    padding: 0 3vw;
+}
+
+.elem h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.2s;
+}
+
+.elem:hover .overlay{
+    top: 0;
+}
+
+.main{
+    /* background-color: black; */
+    position: relative;
+    z-index: 10;
+    overflow-x: hidden;
+}
+
+.page4{
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(239, 234, 227);
+}
+
+/* .page5{
+    height: 100vh;
+    width: 100%;
+    
+} */
+
+.footer{
+    position: fixed;
+    z-index: 9;
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    color: rgb(239, 234, 227);
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.footer h1{
+    font-size: 20rem;
+}
+
+.footer-div{
+    background-color: red;
+    height: 100%;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.foot-bot{
+    border-top: 1px solid red;
+    height: 10vh;
+}
